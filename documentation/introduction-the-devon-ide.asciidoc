@@ -43,37 +43,37 @@ CobiGen is distributed in the Devon distribution as an Eclipse plugin, and is av
 
 == IDE Plugins
 
-Since an application's code can greatly vary, and every program can be written in lots of ways without being semantically different, IDE comes with pre-installed and pre-configured plugins that use some kind of a probabilistic approach, usually based on pattern matching, to determine which pieces of code should be reviewed. These hints are a real time-saver, helping you to review incoming changes and prevent bugs from propagating into the released artifacts. Apart from CobiGen mentioned in the previous paragraph, the IDE provides CheckStyle, SonarQube, FindBugs and SOAP-UI. Details of each can be found in subsequent sections.
+Since an application's code can greatly vary, and every program can be written in lots of ways without being semantically different, IDE comes with pre-installed and pre-configured plugins that use some kind of a probabilistic approach, usually based on pattern matching, to determine which pieces of code should be reviewed. These hints are a real time-saver, helping you to review incoming changes and prevent bugs from propagating into the released artifacts. Apart from CobiGen mentioned in the previous paragraph, the IDE provides Checkstyle, SonarQube, FindBugs and SOAP-UI. Details of each can be found in subsequent sections.
 
-=== CheckStyle
+=== Checkstyle
 
-==== What is CheckStyle?
+==== What is Checkstyle?
 
-http://eclipse-cs.sourceforge.net/[CheckStyle] is a Open Source development tool to help you ensure that your Java code adheres to a set of coding standards. CheckStyle does this by inspecting your Java source code and pointing out items that deviate from a defined set of coding rules.
+http://eclipse-cs.sourceforge.net/[Checkstyle] is a Open Source development tool to help you ensure that your Java code adheres to a set of coding standards. Checkstyle does this by inspecting your Java source code and pointing out items that deviate from a defined set of coding rules.
 
-With the CheckStyle IDE Plugin, your code is constantly inspected for coding standard deviations. Within the Eclipse workbench, you are immediately notified with the problems via the Eclipse Problems View and source code annotations similar to compiler errors or warnings.
+With the Checkstyle IDE Plugin, your code is constantly inspected for coding standard deviations. Within the Eclipse workbench, you are immediately notified with the problems via the Eclipse Problems View and source code annotations similar to compiler errors or warnings.
 This ensures an extremely short feedback loop right at the developers fingertips.
 
-==== Why use CheckStyle?
+==== Why use Checkstyle?
 
 If your development team consists of more than one person, then obviously a common ground for coding standards (formatting rules, line lengths etc.) must be agreed upon - even if it is just for practical reasons to avoid superficial, format related merge conflicts.
-CheckStyle Plugin helps you define and easily apply those common rules.
+Checkstyle Plugin helps you define and easily apply those common rules.
 
-The plugin uses a project builder to check your project files with CheckStyle. Assuming the IDE Auto-Build feature is enabled, each modification of a project file will immediately get checked by CheckStyle on file save - giving you immediate feedback about the changes you made. To use a simple analogy, the CheckStyle Plug-in works very much like a compiler but instead of producing .class files, it produces warnings where the code violates CheckStyle rules. The discovered deviations are accessible in the Eclipse Problems View, as code editor annotations and via additional CheckStyle violations views.
+The plugin uses a project builder to check your project files with Checkstyle. Assuming the IDE Auto-Build feature is enabled, each modification of a project file will immediately get checked by Checkstyle on file save - giving you immediate feedback about the changes you made. To use a simple analogy, the Checkstyle Plug-in works very much like a compiler but instead of producing .class files, it produces warnings where the code violates Checkstyle rules. The discovered deviations are accessible in the Eclipse Problems View, as code editor annotations and via additional Checkstyle violations views.
 
-==== Installation of CheckStyle
+==== Installation of Checkstyle
 
-After IDE installation, IDE provides default CheckStyle configuration file which has certain check rules specified .
-The set of rules used to check the code is highly configurable. A CheckStyle configuration specifies which check rules are validated against the code and with which severity violations will be reported. Once defined a CheckStyle configuration can be used across multiple projects. The IDE comes with several pre-defined CheckStyle configurations.
-You can create custom configurations using the plugin's CheckStyle configuration editor or even use an existing CheckStyle configuration file from an external location.
+After IDE installation, IDE provides default Checkstyle configuration file which has certain check rules specified .
+The set of rules used to check the code is highly configurable. A Checkstyle configuration specifies which check rules are validated against the code and with which severity violations will be reported. Once defined a Checkstyle configuration can be used across multiple projects. The IDE comes with several pre-defined Checkstyle configurations.
+You can create custom configurations using the plugin's Checkstyle configuration editor or even use an existing Checkstyle configuration file from an external location.
 
 You can see violations in your workspace as shown in below figure.
 
-image::images/introduction/devon-ide/checkstyle.png["CheckStyle", width = "450" , link="images/introduction/devon-ide/checkstyle.png"]
+image::images/introduction/devon-ide/checkstyle.png["Checkstyle", width = "450" , link="images/introduction/devon-ide/checkstyle.png"]
 
 ==== Usage
 
-So, once projects are created, follow steps mentioned below, to activate CheckStyle:
+So, once projects are created, follow steps mentioned below, to activate Checkstyle:
 
 [start=1]
 . Open the properties of the project you want to get checked.
@@ -81,24 +81,24 @@ So, once projects are created, follow steps mentioned below, to activate CheckSt
 image::images/introduction/devon-ide/checkstyle2.png["CheckStyle2", width = "450" , link="images/introduction/devon-ide/checkstyle2.png"]
 
 [start=2]
-. Select the CheckStyle section within the properties dialog.
+. Select the Checkstyle section within the properties dialog.
 
 image::images/introduction/devon-ide/checkstyle3.png["CheckStyle3", width = "450" , link="images/introduction/devon-ide/checkstyle3.png"]
 
 [start=3]
-. Activate CheckStyle for your project by selecting the CheckStyle active for this project check box and press OK
+. Activate Checkstyle for your project by selecting the Checkstyle active for this project check box and press OK
 
 image::images/introduction/devon-ide/checkstyle4.png["CheckStyle4", width = "450" , link="images/introduction/devon-ide/checkstyle4.png"]
 
-Now CheckStyle should begin checking your code. This may take a while depending on how many source files your project contains.
-The CheckStyle Plug-in uses background jobs to do its work - so while CheckStyle audits your source files you should be able to continue your work.
-After CheckStyle has finished checking your code please look into your Eclipse Problems View.
-There should be some warnings from CheckStyle. This warnings point to the code locations where your code violates the pre-configured Checks configuration.
+Now Checkstyle should begin checking your code. This may take a while depending on how many source files your project contains.
+The Checkstyle Plug-in uses background jobs to do its work - so while Checkstyle audits your source files you should be able to continue your work.
+After Checkstyle has finished checking your code please look into your Eclipse Problems View.
+There should be some warnings from Checkstyle. This warnings point to the code locations where your code violates the pre-configured Checks configuration.
 
 image::images/introduction/devon-ide/checkstyle5.png["CheckStyle5", width = "450" , link="images/introduction/devon-ide/checkstyle5.png"]
 
 You can navigate to the problems in your code by double-clicking the problem in you problems view.
-On the left hand side of the editor an icon is shown for each line that contains a CheckStyle violation. Hovering with your mouse above this icon will show you the problem message.
+On the left hand side of the editor an icon is shown for each line that contains a Checkstyle violation. Hovering with your mouse above this icon will show you the problem message.
 Also note the editor annotations - they are there to make it even easier to see where the problems are.
 
 === FindBugs
@@ -190,7 +190,7 @@ Additional settings (such as markers for new issues) are available through Windo
 image::images/introduction/devon-ide/eclipse-settings.png["eclipse-settings", width = "450" , link="images/introduction/devon-ide/eclipse-settings.png"]
 
 To look for SonarQube analyzed issue, go to Window->Show View-> Others->SonarLint->SonarLint Issues.
-Now you can see issues in soanrqube issues tab as shown
+Now you can see issues in SonarQube issues tab as shown
 
 image::images/introduction/devon-ide/sonarQube-issues-view.png["SonarQube-issues-view", width = "450" , link="images/introduction/devon-ide/sonarQube-issues-view.png"]
 

@@ -52,7 +52,7 @@ For client applications, _devonfw_ includes two solutions based on _TypeScript_,
 == Custom Tools
 
 === devonfw-IDE
-The https://github.com/devonfw/ide/wiki#devonfw-ide[devonfw-ide] is _not_ one monolithic program that is installed with a traditional executable; rather it's a collection of scripts which are invoked via command line to automate several, repetitive development tasks. These scripts then interact with other tools, frameworks, and third-party IDEs to streamline the development workflow.
+The https://github.com/devonfw/ide/wiki#devonfw-ide[devonfw-IDE] is _not_ one monolithic program that is installed with a traditional executable; rather it's a collection of scripts which are invoked via command line to automate several, repetitive development tasks. These scripts then interact with other tools, frameworks, and third-party IDEs to streamline the development workflow.
 
 image::images/introduction/devonfw-ide.png[,width="550", link="images/introduction/devonfw-ide.png"]
 
@@ -90,4 +90,4 @@ https://github.com/devonfw/cobigen/wiki#architecture[CobiGen] is a code generato
 
 image::images/introduction/cobigen.png[,width="550", link="images/introduction/cobigen.png"]
 
-Following the same philosophy as the devonfw-ide, _CobiGen_ bundles a new command line interface (CLI), that enables the generation of code using only a few commands. This approach also allows us to decouple CobiGen from _Eclipse_ and use it alongside _VS Code_ or _IntelliJ IDEA_.
+Following the same philosophy as the devonfw-IDE, _CobiGen_ bundles a new command line interface (CLI), that enables the generation of code using only a few commands. This approach also allows us to decouple CobiGen from _Eclipse_ and use it alongside _VS Code_ or _IntelliJ IDEA_.
