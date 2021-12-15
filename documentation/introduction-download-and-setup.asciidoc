@@ -55,7 +55,7 @@ image::images/introduction/download-install/setup_2.png[, width="450", link="ima
 
 *The working devonfw environment is ready!*
 
-*Note* : If you use a proxy to connect to the Internet, you have to manually configure it in Maven, Sencha Cmd and Eclipse. Next section explains about it.
+*Note* : If you use a proxy to connect to the Internet, you have to manually configure it in Maven, Sencha CMD and Eclipse. Next section explains about it.
 
 === Linux
 
@@ -71,7 +71,7 @@ image::images/introduction/download-install/create_update_ws.png[, width="550", 
 
 These both . env.sh and . create-or-update-workspace will set PATH for all the software included with devon distribution like: eclipse, maven, java etc. Also this will generate some file like eclipse_main used to invoke eclipse.
 
-* For vscode setup we have to execute create-or-update-workspace-vs
+* For VSCode setup we have to execute create-or-update-workspace-vs
 
 * There are a also scripts initialize.sh and uninstallUI.sh.
 ** initialize.sh: installs angular, node, python, ant, and subversion

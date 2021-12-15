@@ -30,7 +30,7 @@ The most relevant repositories here are the individual devonfw technology stacks
 * https://github.com/devonfw/devon4j[devon4j] (for Java)
 * https://github.com/devonfw/devon4ng[devon4ng] (for Angular)
 * https://github.com/devonfw/devon4net[devon4net] (for .NET)
-* https://github.com/devonfw/devon4node[devon4node] (for Node.js)
+* https://github.com/devonfw/devon4node[devon4node] (for NodeJS)
 * https://github.com/devonfw/devon4x[devon4x] (for Xamarin)
 
 Our framework also delivers a number of tools and plug-ins that aim to accelerate and streamline the development process, for example:
